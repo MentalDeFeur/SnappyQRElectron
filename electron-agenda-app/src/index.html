@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Electron</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda</h1>
+        <form id="agenda-form">
+            <label for="event-name">Nom du rendez-vous:</label>
+            <input type="text" id="event-name" required>
+
+            <label for="event-date">Date du rendez-vous (format iCal):</label>
+            <input type="text" id="event-date" required>
+
+            <button type="submit">Validez</button>
+        </form>
+        <div id="qrcode"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
