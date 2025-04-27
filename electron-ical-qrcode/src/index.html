@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'Événements iCal et QRCode</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur d'Événements iCal</h1>
+        <form id="eventForm">
+            <label for="eventTitle">Titre de l'Événement:</label>
+            <input type="text" id="eventTitle" required>
+
+            <label for="eventDate">Date (yyyyMMdd):</label>
+            <input type="text" id="eventDate" required pattern="\d{8}">
+
+            <button type="submit" id="validate-button">Validez</button>
+        </form>
+        <canvas id="qrCode"></canvas>
+    </div>
+    <script type="module" src="renderer.js"></script>
+</body>
+</html>

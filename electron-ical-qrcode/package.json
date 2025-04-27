@@ -1,0 +1,28 @@
+{
+  "name": "electron-ical-qrcode",
+  "version": "1.0.0",
+  "description": "An Electron application to generate iCal events and QR codes.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^25.9.8",
+    "ical-generator": "^1.0.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/electron-ical-qrcode.git"
+  },
+  "keywords": [
+    "electron",
+    "ical",
+    "qrcode"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
