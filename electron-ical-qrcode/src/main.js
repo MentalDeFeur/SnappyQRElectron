@@ -8,6 +8,7 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
+            nodeIntegration: true, // Active l'intégration de Node.js
             contextIsolation: false, // Active l'isolation du contexte
             enableRemoteModule: false,
         },

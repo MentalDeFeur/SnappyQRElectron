@@ -1,20 +1,18 @@
-import QRCode from './node_modules/qrcode';
+import QRCode from 'qrcode';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('eventForm');
     const validateButton = document.getElementById('validate-button');
-    const qrCodeCanvas = document.getElementById('qrCode'); // Assurez-vous que l'ID correspond
-
+    const qrCodeCanvas = document.getElementById('qrCode'); // Assurez-vous que l'ID correspondant    
     if (!form || !validateButton || !qrCodeCanvas) {
         console.error('Required elements are missing in the DOM.');
         return;
     }
-
     validateButton.addEventListener('click', (event) => {
         event.preventDefault();
         
         const title = form.elements['eventTitle'].value;
-        const date = form.elements['eventDate'].value; // Expected format: yyyyMMdd
+        var date = form.elements['eventDate'].value;
 
         if (title && date) {
             const icalEvent = generateICalEvent(title, date);
