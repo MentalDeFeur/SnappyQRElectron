@@ -10,7 +10,7 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true, // Active l'intégration de Node.js
             contextIsolation: false, // Active l'isolation du contexte
-            enableRemoteModule: false,
+            enableRemoteModule: true, // Active le module distant
         },
     });
 

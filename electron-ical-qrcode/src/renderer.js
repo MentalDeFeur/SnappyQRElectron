@@ -1,4 +1,4 @@
-import QRCode from 'qrcode';
+var QRCode = require('qrcode');
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('eventForm');
